@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "memoboard-48079": {
+      "hosting": {
+        "memoboard": [
+          "memoboard-48079"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "memoboard-48079"
+  }
+}

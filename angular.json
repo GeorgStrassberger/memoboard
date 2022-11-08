@@ -100,8 +100,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "memoboard:build:production",
+            "firebaseProject": "memoboard-48079",
+            "firebaseHostingSite": "memoboard-48079"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "215cbf71-d17d-40e0-90e4-54f0f23698b1"
   }
 }

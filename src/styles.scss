@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --header-height: 60px;
+    --footer-height: 100px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {}
+
+body {
+    min-height: 100vh;
+    background-image: url(/assets/img/cork.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

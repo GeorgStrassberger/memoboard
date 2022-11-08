@@ -1,11 +1,7 @@
 header {
     display: flex;
-    justify-content: space-between;
     background-color: lightgray;
     height: var(--header-height);
-    div {
-        display: flex;
-    }
     button {
         padding-inline: 16px;
         display: flex;
@@ -16,14 +12,4 @@ header {
             margin-right: 8px;
         }
     }
-    input {
-        margin: 4px;
-        width: 300px;
-    }
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
