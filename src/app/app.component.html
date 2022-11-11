@@ -3,12 +3,14 @@
         <button (click)="addNote()"><img src="assets/img/plus-32.png">Neue Notiz</button>
         <input [(ngModel)]="inputMemo" type="text" placeholder="Text eingeben ...">
     </div>
-    <button (click)="renderMemos()"><img src="assets/img/info-32.png">Info</button>
+    <button><img src="assets/img/info-32.png">Info</button>
 </header>
 
 <main id="content">
 
-    <app-note [person]="memo.person" [text]="memo.text" *ngFor="let memo of memos$ | async" (click)="entfNote()"></app-note>
+    <app-note [memo]="memo" *ngFor="let memo of memos$ | async; let i = index"></app-note>
+    <!-- <app-note [memo]="memo" *ngFor="let memo of memos$ | async; let i = index" (click)="entfNote($any(memo['id']))"></app-note> -->
+
 
     <!-- In die componente übergeben -->
     <!-- <div class="note" *ngFor="let memo of memos$ | async">

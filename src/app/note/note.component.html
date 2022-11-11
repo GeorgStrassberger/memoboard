@@ -1,7 +1,7 @@
 <div class="note">
     <div class="headline">
-        <h3>{{ person }}</h3>
-        <img src="assets/img/x-mark-32.png">
+        <h3>{{ memo.person }}</h3>
+        <img src=" assets/img/x-mark-32.png" (click)="entfNote(memo.id)">
     </div>
-    <p>{{ text }}</p>
+    <p>{{ memo.text }}</p>
 </div>
