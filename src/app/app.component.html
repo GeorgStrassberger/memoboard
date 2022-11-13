@@ -9,7 +9,6 @@
 <main id="content">
 
     <app-note [memo]="memo" *ngFor="let memo of memos$ | async; let i = index"></app-note>
-    <!-- <app-note [memo]="memo" *ngFor="let memo of memos$ | async; let i = index" (click)="entfNote($any(memo['id']))"></app-note> -->
 
 
     <!-- In die componente übergeben -->
